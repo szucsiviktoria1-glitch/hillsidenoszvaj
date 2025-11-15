@@ -1,7 +1,7 @@
-/* ===== Google Fonts ===== */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* ===== Reset / Globális ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ main {
   text-align: center;
 }
 
-/* ===== Fejléc (minden oldal) ===== */
+
 header {
   background: #1a4d2e;
   color: white;
@@ -43,22 +43,6 @@ header {
   border: 3px solid #ff9933;
 }
 
-/* Hamburger ikon */
-.hamburger {
-display: none;
-flex-direction: column;
-cursor: pointer;
-gap: 5px;
-}
-.hamburger span {
-width: 25px;
-height: 3px;
-background: #333;
-border-radius: 3px;
-}
-
-
-/* Alapértelmezett menü */
 nav ul {
 display: flex;
 gap: 20px;
@@ -87,7 +71,6 @@ nav a.active {
   background: #e68a00;
 }
 
-/* ===== Főoldal ===== */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
               url('img/main.jpg') center/cover no-repeat;
@@ -122,7 +105,6 @@ nav a.active {
   background: #e68a00;
 }
 
-/* ===== Szolgáltatások ===== */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -162,7 +144,7 @@ nav a.active {
   box-shadow: 0 3px 10px rgba(0,0,0,0.07);
 }
 
-/* ===== Foglalási űrlap ===== */
+
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -188,14 +170,14 @@ input:focus, textarea:focus {
   outline: none;
 }
 
-/* Checkbox & Radio */
+
 .checkbox, .radio {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-/* ===== Galéria ===== */
+
 .galeria {
   max-width: 900px;
   margin: 0 auto 2rem;
@@ -260,7 +242,6 @@ input:focus, textarea:focus {
   border-color: #ff9933;
 }
 
-/* ===== Footer ===== */
 footer {
   background: #1a4d2e;
   color: white;
@@ -269,7 +250,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ===== Reszponzív design ===== */
 @media (max-width: 600px) {
   header {
     flex-direction: column;
