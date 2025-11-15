@@ -1,0 +1,288 @@
+/* ===== Google Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ===== Reset / Globális ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7f6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 5%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* ===== Fejléc (minden oldal) ===== */
+header {
+  background: #1a4d2e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  flex-wrap: wrap;
+}
+
+.site-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #ff9933;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffd44d;
+}
+
+.foglalas {
+  background: #b8640f;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.foglalas:hover {
+  background: #e68a00;
+}
+
+/* ===== Főoldal ===== */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('img/main.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.foglalasigomb {
+  background: #ff9933;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.foglalasigomb:hover {
+  background: #e68a00;
+}
+
+/* ===== Szolgáltatások ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.7rem;
+}
+
+.kartya {
+  background: white;
+  padding: 1.7rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.kartya:hover {
+  transform: translateY(-5px);
+}
+
+.kartya h3 {
+  color: #ff9933;
+  margin-bottom: 0.7rem;
+}
+
+.kulteri-lista {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.kulteri-lista li {
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  color: #1a4d2e;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+/* ===== Foglalási űrlap ===== */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #1a4d2e;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #ff9933;
+  outline: none;
+}
+
+/* Checkbox & Radio */
+.checkbox, .radio {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ===== Galéria ===== */
+.galeria {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}
+
+.nagykep {
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#fo-kep {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.nagykep button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  padding: .5rem .8rem;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.nagykep button:hover {
+  background: rgba(0,0,0,.8);
+}
+
+#bal { left: 10px; }
+#jobb { right: 10px; }
+
+.kis-kepek {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.kis-kepek img {
+  width: 90px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: .7;
+  border: 2px solid transparent;
+  transition: .2s;
+}
+
+.kis-kepek img:hover,
+.kis-kepek img.aktiv {
+  opacity: 1;
+  transform: scale(1.05);
+  border-color: #ff9933;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #1a4d2e;
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+}
+
+/* ===== Reszponzív design ===== */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .hero {
+    padding: 4rem 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

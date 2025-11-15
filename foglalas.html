@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Szücsi Viktória">
+  <meta name="description" content="Hill Side Noszvaj nyaraló online foglalás">
+  <title>Hill Side Noszvaj | Foglalás</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="logo"><img src="img/logo.png" alt="Hill Side Noszvaj logó" class="site-logo"></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+        <li><a href="galeria.html">Galéria</a></li>
+        <li><a href="foglalas.html" class="foglalas active">Foglalás</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Foglalási űrlap</h2>
+    <p>Töltse ki az adatokat, majd kattintson a „Küldés” gombra!</p>
+
+    <form id="foglalas-form" class="booking-form">
+      <div class="form-group">
+        <label for="nev">Teljes név*</label>
+        <input type="text" id="nev" required minlength="3" placeholder="Pl.: Kiss Anna">
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail cím*</label>
+        <input type="email" id="email" required placeholder="pl.: anna@email.hu">
+      </div>
+
+      <div class="form-group">
+        <label for="tel">Telefonszám* (+36...)</label>
+        <input type="tel" id="tel" required pattern="^\+\d{10,12}$" placeholder="+36201234567">
+      </div>
+
+      <div class="form-group">
+        <label for="vendegek">Vendégek száma (1–6)*</label>
+        <input type="number" id="vendegek" min="1" max="6" required>
+      </div>
+
+      <div class="form-group">
+        <label for="erkezes">Érkezés dátuma*</label>
+        <input type="date" id="erkezes" required>
+      </div>
+
+      <div class="form-group">
+        <label for="ejszakak">Éjszakák száma (min. 2)</label>
+        <input type="number" id="ejszakak" min="2" value="2">
+      </div>
+
+      <div class="form-group checkbox">
+        <label>
+          <input type="checkbox" id="jacuzzi"> Kérem a jakuzzit (felár ellenében)
+        </label>
+      </div>
+
+      <div class="form-group radio">
+        <span>Ellátás:</span><br>
+        <label><input type="radio" name="ellatas" value="nincs" checked> Nincs</label>
+        <label><input type="radio" name="ellatas" value="reggeli"> Reggeli</label>
+      </div>
+
+      <div class="form-group">
+        <label for="megjegyzes">Megjegyzés (max. 500 karakter)</label>
+        <textarea id="megjegyzes" maxlength="500" rows="4" placeholder="Ide írhat megjegyzést..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Küldés</button>
+      <p id="uzenet"></p>
+    </form>
+
+    <section class="contact-info">
+      <h3>Elérhetőségek</h3>
+      <p><strong>Telefonszám:</strong> <a href="tel:+36303408030">+36 30 340 8030</a></p>
+      <p><strong>Email:</strong> <a href="mailto:hillside@gmail.com">hillside@gmail.com</a></p>
+      <p><strong>Cím:</strong> Noszvaj, Lépcsős utca 38</p>
+      <div style="width:100%;max-width:600px;margin:1rem auto; border-radius:10px; overflow:hidden;">
+        <iframe src="https://www.google.com/maps?q=Noszvaj%20L%C3%A9pcs%C5%91s%20utca%2038&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hill Side Noszvaj | Készítette: Szücsi Viktória</p>
+  </footer>
+
+  <script src="js/foglalas.js"></script>
+</body>
+</html>

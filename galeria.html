@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="szerkesztő" content="Szücsi Viktória">
+  <meta name="description" content="Hill Side Noszvaj fotógaléria">
+  <title>Hill Side Noszvaj | Galéria</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+  <header>
+    <h1 class="logo"><img src="img/logo.png" alt="Hill Side Noszvaj logó" class="site-logo"></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+        <li><a href="galeria.html" class="active">Galéria</a></li>
+        <li><a href="foglalas.html" class="foglalas">Foglalás</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Fotóalbum</h2>
+    <p>Kattints a képekre vagy használd a nyilakat a lapozáshoz!</p>
+
+    <div class="galeria">
+      <div class="nagykep">
+        <img id="fo-kep" src="img/furdo.jpg" alt="Fő kép">
+        <button id="bal">⇐</button>
+        <button id="jobb">⇒</button>
+      </div>
+
+      <div class="kis-kepek">
+        <img src="img/kulsokep (2).jpg" data-index="0" class="aktiv">
+        <img src="img/jacuzzi_belter.jpg" data-index="1">
+        <img src="img/belter.jpg" data-index="2">
+        <img src="img/konyha.jpg" data-index="3">
+        <img src="img/furdo.jpg" data-index="4">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hill Side Noszvaj | Készítette: Szücsi Viktória</p>
+  </footer>
+
+  <script src="js/galeria.js"></script>
+</body>
+</html>
