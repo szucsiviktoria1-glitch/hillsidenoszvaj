@@ -1,4 +1,3 @@
-// Egyszerű képváltó galéria
 const kepek = [
   "img/kulsokep (2).jpg",
   "img/jacuzzi_belter.jpg",
@@ -13,7 +12,7 @@ const bal = document.getElementById("bal");
 const jobb = document.getElementById("jobb");
 const kisKepek = document.querySelectorAll(".kis-kepek img");
 
-// fő kép frissítése
+
 function mutat(i) {
   index = (i + kepek.length) % kepek.length;
   foKep.src = kepek[index];

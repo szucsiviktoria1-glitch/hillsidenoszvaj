@@ -1,9 +1,9 @@
-// Egyszerű űrlapellenőrzés
+
 const form = document.getElementById("foglalas-form");
 const uzenet = document.getElementById("uzenet");
 
 form.addEventListener("submit", e => {
-  e.preventDefault(); // ne küldje el azonnal
+  e.preventDefault(); 
 
   const nev = document.getElementById("nev").value.trim();
   const email = document.getElementById("email").value.trim();
@@ -11,7 +11,7 @@ form.addEventListener("submit", e => {
   const vendegek = document.getElementById("vendegek").value;
   const erkezes = document.getElementById("erkezes").value;
 
-  // Alap ellenőrzés
+
   if (nev.length < 3) {
     uzenet.textContent = "A név túl rövid!";
     uzenet.style.color = "red";
@@ -42,8 +42,7 @@ form.addEventListener("submit", e => {
     return;
   }
 
-  // Ha minden jó
   uzenet.textContent = "Foglalási igény sikeresen elküldve!";
   uzenet.style.color = "green";
-  form.reset(); // üríti az űrlapot
+  form.reset();
 });
