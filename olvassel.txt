@@ -1,0 +1,29 @@
+Készítő neve:
+Szücsi Viktória(GTVMK5)
+
+A működő weboldal URL címe:
+https://szucsiviktoria1-glitch.github.io/hillsidenoszvaj/index.html
+
+A weboldal témájának rövid leírása:
+A Hill Side Noszvaj weboldal egy modern, hegyoldalban található nyaraló bemutatását és online foglalását teszi lehetővé. A látogatók áttekinthetik a szállás szolgáltatásait, galériáját, majd a foglalási űrlapon keresztül kapcsolatba léphetnek.
+
+A saját JavaScript kód helye és működésének leírása:
+A JavaScript fájlok a /js mappában találhatók:
+
+foglalas.js – validálja a foglalási űrlap mezőit (név, e-mail, telefonszám, dátum, vendégek száma), ellenőrzi a formátumokat és hibajelzést / sikeres üzenetet jelenít meg.
+
+galeria.js – a képgaléria működését biztosítja: bélyegképek kiválasztása, fő kép cseréje, bal–jobb navigáció.
+
+
+Használt egyedi fonttípus és annak helye:
+A weboldal a Google Fonts „Poppins” betűtípusát használja.
+Betöltés helye:
+https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap
+
+Felhasznált külső források:
+
+Űrlapmezők HTML-validációs mintái: MDN Web Docs
+
+Alapvető CSS reszponzív elrendezési minták: CSS-Tricks
+
+Google Maps beágyazott térkép iframe (Google Maps beépített "Embed map" funkció)

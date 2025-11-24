@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Szücsi Viktória">
+  <meta name="Készítette" content="Szücsi Viktória">
   <meta name="description" content="Hill Side Noszvaj nyaraló online foglalás">
   <title>Hill Side Noszvaj | Foglalás</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="img/logo.png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -26,20 +25,20 @@
     <h2>Foglalási űrlap</h2>
     <p>Töltse ki az adatokat, majd kattintson a „Küldés” gombra!</p>
 
-    <form id="foglalas-form" class="booking-form">
+    <form id="foglalas-form" >
       <div class="form-group">
         <label for="nev">Teljes név*</label>
-        <input type="text" id="nev" required minlength="3" placeholder="Pl.: Kiss Anna">
+        <input type="text" id="nev" required minlength="3" placeholder="Pl.: Szücsi Viktória">
       </div>
 
       <div class="form-group">
         <label for="email">E-mail cím*</label>
-        <input type="email" id="email" required placeholder="pl.: anna@email.hu">
+        <input type="email" id="email" required placeholder="pl.: viki@email.hu">
       </div>
 
       <div class="form-group">
         <label for="tel">Telefonszám* (+36...)</label>
-        <input type="tel" id="tel" required pattern="^\+\d{10,12}$" placeholder="+36201234567">
+        <input type="tel" id="tel" required placeholder="+36201234567">
       </div>
 
       <div class="form-group">
@@ -64,9 +63,9 @@
       </div>
 
       <div class="form-group radio">
-        <span>Ellátás:</span><br>
-        <label><input type="radio" name="ellatas" value="nincs" checked> Nincs</label>
-        <label><input type="radio" name="ellatas" value="reggeli"> Reggeli</label>
+        <span>Ellátás:</span>
+        <label><input type="radio" id="radio" name="ellatas" value="nincs" checked> Nincs</label>
+        <label><input type="radio" id="radio" name="ellatas" value="reggeli"> Reggeli</label>
       </div>
 
       <div class="form-group">
@@ -74,7 +73,7 @@
         <textarea id="megjegyzes" maxlength="500" rows="4" placeholder="Ide írhat megjegyzést..."></textarea>
       </div>
 
-      <button type="submit" class="submit-btn">Küldés</button>
+      <button type="submit"  class="submit-btn">Küldés</button>
       <p id="uzenet"></p>
     </form>
 
@@ -83,7 +82,7 @@
       <p><strong>Telefonszám:</strong> <a href="tel:+36303408030">+36 30 340 8030</a></p>
       <p><strong>Email:</strong> <a href="mailto:hillside@gmail.com">hillside@gmail.com</a></p>
       <p><strong>Cím:</strong> Noszvaj, Lépcsős utca 38</p>
-      <div style="width:100%;max-width:600px;margin:1rem auto; border-radius:10px; overflow:hidden;">
+      <div>
         <iframe src="https://www.google.com/maps?q=Noszvaj%20L%C3%A9pcs%C5%91s%20utca%2038&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
